@@ -1,0 +1,64 @@
+.switcher-container {
+  position: relative;
+
+  width: 240px;
+  height: 102px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 8px;
+
+  border-radius: 50px;
+  background-color: var(--label);
+}
+
+.switcher-button {
+  cursor: pointer;
+
+  width: 80px;
+  height: 80px;
+
+  position: absolute;
+
+  border: 0;
+  border-radius: 50%;
+
+  transition: 0.5s transform;
+
+  z-index: 1;
+}
+
+.button-active {
+  transform: translateX(144px);
+}
+
+.switcher-container::after {
+  content: '';
+  width: 80px;
+  height: 80px;
+
+  position: absolute;
+
+  right: 8px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/sun.svg);
+}
+
+.switcher-container::before {
+  content: '';
+  width: 80px;
+  height: 80px;
+
+  position: absolute;
+
+  left: 8px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/moon.svg);
+}

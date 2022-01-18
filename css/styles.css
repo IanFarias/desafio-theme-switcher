@@ -1,0 +1,21 @@
+:root {
+  --dark: #292c35;
+  --light: #f1f1f1;
+  --label: #111;
+}
+
+.main-content {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f1f1f1;
+
+  transition: 0.5s background-color;
+}
+
+.background-dark {
+  background-color: #292c35;
+}
