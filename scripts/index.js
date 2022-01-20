@@ -7,3 +7,12 @@ switcher.addEventListener('click', () => {
     background.classList.toggle('background-dark');
     header.classList.toggle('header-dark')
 })
+
+switcher.addEventListener('keyup', (event) => {
+    if(event.key === 'Enter') {
+        event.target.checked = !event.target.checked;
+
+        background.classList.toggle('background-dark');
+        header.classList.toggle('header-dark');
+    }
+})
