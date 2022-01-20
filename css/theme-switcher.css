@@ -13,8 +13,12 @@
   background-color: var(--label);
 }
 
-.switcher-button {
+.switcher-label {
   cursor: pointer;
+
+  display: inline-block;
+
+  background-color: white;
 
   width: 80px;
   height: 80px;
@@ -29,8 +33,16 @@
   z-index: 1;
 }
 
-.button-active {
+.switcher-checkbox:checked + .switcher-label {
   transform: translateX(144px);
+}
+
+.switcher-checkbox:focus-visible + .switcher-label {
+  box-shadow: 0px 0px 4px 3px #df0000;
+}
+
+#switcher {
+  z-index: -99999;
 }
 
 .switcher-container::after {
