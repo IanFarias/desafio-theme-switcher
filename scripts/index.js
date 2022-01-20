@@ -1,10 +1,9 @@
-const background = document.querySelector('.main-content')
-const switcher = document.querySelector('#switcher')
-
+const background = document.querySelector('.page-body');
+const switcher = document.querySelector('.switcher-checkbox');
+const header = document.querySelector('.page-header');
 
 
 switcher.addEventListener('click', () => {
-    switcher.classList.toggle('button-active');
-    
     background.classList.toggle('background-dark');
+    header.classList.toggle('header-dark')
 })
